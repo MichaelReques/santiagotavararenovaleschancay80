@@ -98,7 +98,7 @@ const OrgChart = () => (
                 Segundo Jefe de Unidad
               </h2>
               <p className="font-body text-sm text-white/90 font-bold uppercase tracking-widest mt-1">
-                Cap. CBP. Magaly Villalobos Reyes
+                Tnt. CBP. Magaly Villalobos Reyes
               </p>
             </div>
           </div>
