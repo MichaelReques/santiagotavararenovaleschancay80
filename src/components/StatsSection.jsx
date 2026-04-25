@@ -21,8 +21,8 @@ const stats = [
     valueClass: "text-6xl font-headline font-black block mb-2 text-[#b3c5ff]",
   },
   {
-    value: 12,
-    label: "Rescates",
+    value: 35,
+    label: "Años de Servicio",
     className: "bg-[#1b1c1c] p-10 border-l-4 border-zinc-400",
     valueClass: "text-6xl font-headline font-black block mb-2 text-white",
   },
