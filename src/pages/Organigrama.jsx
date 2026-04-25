@@ -66,7 +66,7 @@ const OrgChart = () => (
         <CardOrga 
           imagen="magaly.png"
           cargo="SEGUNDO JEFE"
-          nombre="TNTE. CBP. MAGALI VILLABOS REYES"
+          nombre="TNTE. CBP. VICTORIA MAGALI VILLABOS REYES"
           className="bg-[#2a4386]"
         />
         <div style={customStyles.orgLineV} className="h-12" />
