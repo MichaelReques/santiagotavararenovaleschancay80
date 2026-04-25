@@ -26,8 +26,8 @@ const requisitos = [
 
 const proceso = [
     { icon: "description", label: "1. Registro y Evaluación de Perfil" },
-    { icon: "psychology", label: "3. Entrevista Personal" },
-    { icon: "fitness_center", label: "2. Examen de Aptitud Física" },
+    { icon: "psychology", label: "3. Examen de Aptitud Física" },
+    { icon: "fitness_center", label: "2. Entrevista Personal" },
     { icon: "school", label: "4. Etapa de postulantado" },
 ];
 
@@ -79,9 +79,9 @@ export default function Postula() {
             <section className="relative h-[409px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0WZ2Xx4Ut577CJoDbWPHOhejFQ3nDPC-MhsSUOesmyZEH-2Nhit4f2Xo8BiNEzdoneCeTRjwRemruAHD6z6hiWci5vjQoSorzaA_Cvjfn97Qg-5ReIxQMre1KRE5jzk8JpP6azHXZS5UCFheQEutTJu5Qsq7v15GhqcipEUq1bx1-vb3Xj9bRbnZTyRK14oAQYMnG8N3E1p2Zz5NPYVezTYc-l2lBeXRnL3CfhsPSWU5e6AJnMzrFiwx5N1ugA11ZP6T0dO1_woh"
+                        src="postulantes.jpg"
                         alt="Bomberos"
-                        className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-1000"
+                        className="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
                     />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #131314, transparent)" }}></div>
                 </div>
@@ -140,12 +140,12 @@ export default function Postula() {
                             ))}
                         </div>
                     </div>
-
+                            
                     {/* Testimonial */}
                     <div className="relative group rounded-sm overflow-hidden h-64">
                         <img
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqMtg9WYsGZGbZAO4W7NIshNxLsJ9-Xe2aHAFuVHSg0ZtPn5daYxjfJsC1VGfr1z_CeCueaRUGY09HVNd8cFP8dwDJzmSFp2ya-sSdoc6HjC5nPFjMpVYlB4dbbSNLTKk0DQ1V86Oh6NszlEtMebomPtde0VBoTMr2UUE2Pqcsn5AulRlCnMMQlijOoE-PX3d7NmSE7mfLPGZFylsz9NbIw_-QV9qu6zURqi5DHTZ3z3_aFgUjXaXoUg1KFI7xgzF327J8LRtOGIIC"
-                            alt="Teniente Carla Mendoza"
+                            src="bosque80.jpeg"
+                            alt="Chancay80"
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute inset-0 bg-[#c1272d]/40 mix-blend-multiply"></div>
@@ -153,7 +153,6 @@ export default function Postula() {
                             <p className="font-headline font-bold text-lg leading-tight text-white mb-1">
                                 "NO BUSCAMOS HÉROES, BUSCAMOS VOCACIÓN."
                             </p>
-                            <p className="text-xs uppercase tracking-widest text-[#ffb3ae]">Teniente Carla Mendoza</p>
                         </div>
                     </div>
 

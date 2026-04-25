@@ -3,29 +3,30 @@ import { CountUp } from "countup.js";
 
 const stats = [
   {
-    value: 12482,
-    label: "Incendios Controlados",
+    value: 80,
+    label: "Incendios",
     className: "bg-[#1b1c1c] p-10 border-l-4 border-[#c1272d]",
     valueClass: "text-6xl font-headline font-black block mb-2 text-[#c1272d]",
   },
   {
-    value: 35901,
+    value: 149,
     label: "Emergencias Médicas",
     className: "bg-[#1b1c1c] p-10 border-l-4 border-[#cdcd00]",
     valueClass: "text-6xl font-headline font-black block mb-2 text-[#cdcd00]",
   },
   {
-    value: 8115,
-    label: "Rescates Exitosos",
+    value: 100,
+    label: "Acidentes Vehiculares",
     className: "bg-[#1b1c1c] p-10 border-l-4 border-[#b3c5ff]",
     valueClass: "text-6xl font-headline font-black block mb-2 text-[#b3c5ff]",
   },
   {
-    value: 153,
-    label: "Años de Servicio",
+    value: 12,
+    label: "Rescates",
     className: "bg-[#1b1c1c] p-10 border-l-4 border-zinc-400",
     valueClass: "text-6xl font-headline font-black block mb-2 text-white",
   },
+  
 ];
 
 function StatCard({ stat, index, isVisible }) {
@@ -50,7 +51,7 @@ function StatCard({ stat, index, isVisible }) {
   }, [isVisible, index]);
 
   return (
-    <div className={stat.className}>
+    <div className={`${stat.className} transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}>
       <span ref={ref} className={stat.valueClass}>
         0
       </span>
@@ -108,7 +109,7 @@ export default function StatsSection() {
         {/* Stats Grid */}
         <div
           ref={sectionRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 "
         >
           {stats.map((stat, i) => (
             <StatCard key={i} stat={stat} index={i} isVisible={isVisible} />

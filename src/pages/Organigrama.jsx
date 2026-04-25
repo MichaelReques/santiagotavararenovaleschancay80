@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import HeroOrganigrama from "../components/HeroOrganigrama";
+import CardOrga from "../components/cardOrga";
+import { MdInventory2, MdGroups, MdFireTruck, MdEngineering, MdSchool, MdMedicalServices } from "react-icons/md";
 
 // ─── Estilos que Tailwind no cubre (valores exactos de color/sombra) ──────────
 const customStyles = {
@@ -14,15 +16,14 @@ const Icon = ({ name, className = "" }) => (
 );
 
 // ─── Tarjeta de departamento ──────────────────────────────────────────────────
-const DeptCard = ({ icon, title, grado, nombre }) => (
+const DeptCard = ({ icon: IconComponent, title, grado, nombre }) => (
   <div className="flex flex-col items-center">
-    {/* conector vertical — oculto en móvil */}
     <div style={customStyles.orgLineV} className="hidden sm:block h-10 mb-4" />
 
     <div className="group w-full bg-white border border-gray-200 border-t-4 border-t-[#c1272d] rounded-sm p-4 md:p-6 shadow-sm hover:-translate-y-1 transition-transform duration-300">
       <div className="flex items-center gap-3 mb-3">
         <div className="w-9 h-9 bg-red-50 rounded flex items-center justify-center shrink-0">
-          <Icon name={icon} className="text-[#c1272d] text-xl" />
+          <IconComponent className="text-[#c1272d] text-xl" />
         </div>
         <h5 className="font-headline font-extrabold text-sm uppercase text-[#1a1c1e] tracking-tight leading-snug whitespace-pre-line">
           {title}
@@ -37,12 +38,12 @@ const DeptCard = ({ icon, title, grado, nombre }) => (
 );
 
 const departamentos = [
-  { icon: "inventory_2",      title: "Jefe de\nAdministración y Voluntariado", grado: "SECCIONARIO CBP",  nombre: "Gianella Yanac Villareal"  },
-  { icon: "groups",           title: "Jefe\nde\nImagen",                        grado: "SUBTENIENTE CBP", nombre: "Martín Morales Ramos"       },
-  { icon: "fire_truck",       title: "Jefe\nde\nMaquinas",                      grado: "TENIENTE CBP",    nombre: "Teófilo Tafur Cerda"        },
-  { icon: "engineering",      title: "Jefe de\nServicios\nGenerales",           grado: "SECCIONARIO CBP", nombre: "Hans Vargas Vásquez"        },
-  { icon: "school",           title: "Jefe de\nInstrucción y Entrenamiento",    grado: "TNTE. BRIG. CBP", nombre: "Gabriel Dulando Vega"       },
-  { icon: "medical_services", title: "Jefe de\nAtención Pre-Hospitalaria",      grado: "SUBTENIENTE CBP", nombre: "Katerine Marín Espinoza"    },
+  { icon: MdInventory2,      title: "Jefe de\nAdministración y Voluntariado", grado: "SECCIONARIO CBP",  nombre: "Gianella Yameli Yanac Villareal"  },
+  { icon: MdGroups,          title: "Jefe\nde\nImagen",                        grado: "SUBTENIENTE CBP", nombre: "Martín Gonzalo Morales Ramos"       },
+  { icon: MdFireTruck,       title: "Jefe\nde\nMaquinas",                      grado: "TENIENTE CBP",    nombre: "Teófilo Ignacio Tafur Cerda"        },
+  { icon: MdEngineering,     title: "Jefe de\nServicios\nGenerales",           grado: "SECCIONARIO CBP", nombre: "Harold Hans Vargas Vásquez"        },
+  { icon: MdSchool,          title: "Jefe de\nInstrucción y Entrenamiento",    grado: "TNTE. BRIG. CBP", nombre: "Gabriel Alessandro Dulando Vega"       },
+  { icon: MdMedicalServices, title: "Jefe de\nAtención Pre-Hospitalaria",      grado: "SUBTENIENTE CBP", nombre: "Katerine Marín Espinoza"    },
 ];
 
 // ─── Organigrama ──────────────────────────────────────────────────────────────
@@ -52,57 +53,22 @@ const OrgChart = () => (
 
       {/* ── Nivel 1 – Primer Jefe ── */}
       <div data-aos="fade-right" className="flex flex-col items-center mb-8">
-        <div
-          style={customStyles.glowPrimary}
-          className="bg-white p-2 rounded-sm border border-red-100 overflow-hidden w-full max-w-lg"
-        >
-          <div className="bg-[#c1272d] p-4 md:p-6 flex items-center gap-4 md:gap-8 text-white flex-wrap">
-            <div className="relative shrink-0">
-              <div className="w-16 h-16 md:w-24 md:h-24 bg-white/20 rounded-full flex items-center justify-center border-4 border-white/30 overflow-hidden">
-                <Icon name="person" className="text-4xl md:text-5xl text-white/40" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 bg-white p-1 rounded-full shadow-md">
-                <Icon name="verified" className="text-[#c1272d] text-base" />
-              </div>
-            </div>
-            <div>
-              <h2 className="font-headline font-extrabold text-lg md:text-2xl uppercase tracking-tighter">
-                Primer Jefe de Unidad
-              </h2>
-              <p className="font-body text-sm text-white/90 font-bold uppercase tracking-widest mt-1">
-                Tnt. Brig. CBP. Rafael Dulanto Vega
-              </p>
-            </div>
-          </div>
-        </div>
+        <CardOrga 
+          imagen="rafa.png"
+          cargo="PRIMER JEFE"
+          nombre="TNTE. BRIG. CBP. RAFAEL JOANNES DULANTO VEGA"
+        />
         <div style={customStyles.orgLineV} className="h-12" />
       </div>
 
-      {/* ── Nivel 2 – Segundo Jefe ── */}
+      {/* ── Nivel 2 – Segundo Jefe ── bg-[#2a4386] */}
       <div data-aos="fade-right" className="flex flex-col items-center mb-8">
-        <div
-          style={customStyles.glowPrimary}
-          className="bg-white p-2 rounded-sm border border-red-100 overflow-hidden w-full max-w-lg"
-        >
-          <div className="bg-[#2a4386] p-4 md:p-6 flex items-center gap-4 md:gap-8 text-white flex-wrap">
-            <div className="relative shrink-0">
-              <div className="w-16 h-16 md:w-24 md:h-24 bg-white/20 rounded-full flex items-center justify-center border-4 border-white/30 overflow-hidden">
-                <Icon name="person" className="text-4xl md:text-5xl text-white/40" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 bg-white p-1 rounded-full shadow-md">
-                <Icon name="verified" className="text-[#c1272d] text-base" />
-              </div> 
-            </div>
-            <div>
-              <h2 className="font-headline font-extrabold text-lg md:text-2xl uppercase tracking-tighter">
-                Segundo Jefe de Unidad
-              </h2>
-              <p className="font-body text-sm text-white/90 font-bold uppercase tracking-widest mt-1">
-                Cap. CBP. Magaly Villalobos Reyes
-              </p>
-            </div>
-          </div>
-        </div>
+        <CardOrga 
+          imagen="magaly.png"
+          cargo="SEGUNDO JEFE"
+          nombre="TNTE. MAGALY VILLABOS REYES"
+          className="bg-[#2a4386]"
+        />
         <div style={customStyles.orgLineV} className="h-12" />
       </div>
 
@@ -147,29 +113,7 @@ const MisionVisionCard = ({ label, text }) => (
   </div>
 );
 
-// ─── Sección Info ─────────────────────────────────────────────────────────────
-const InfoSection = () => (
-  <section className="relative z-10 px-4 sm:px-8 py-12 md:py-24 bg-white/60 backdrop-blur-sm border-t border-gray-200">
-    <div className="max-w-4xl mx-auto text-center">
-      <h2 className="font-headline font-extrabold text-2xl md:text-4xl tracking-tighter text-[#1a1c1e] mb-4 md:mb-6">
-        Funciones Institucionales
-      </h2>
-      <p className="font-body text-[#44474e] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
-        La B-80 Chancay opera bajo los estándares del CGBVP, adaptando su estructura para una respuesta rápida ante emergencias en la zona portuaria y urbana.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-        <MisionVisionCard
-          label="Misión"
-          text="Salvaguardar la vida y propiedad de los ciudadanos de Chancay mediante la prevención, combate de incendios y atención de emergencias médicas."
-        />
-        <MisionVisionCard
-          label="Visión"
-          text="Ser una unidad de vanguardia tecnológica y operativa, referente en la costa central del país y pilar del desarrollo de Chancay."
-        />
-      </div>
-    </div>
-  </section>
-);
+
 
 // ─── Página ───────────────────────────────────────────────────────────────────
 export default function Organigrama() {
@@ -185,7 +129,7 @@ export default function Organigrama() {
       />
       <HeroOrganigrama />
       <OrgChart />
-      <InfoSection />
+      
     </div>
   );
 }

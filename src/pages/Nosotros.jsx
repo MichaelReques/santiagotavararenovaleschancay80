@@ -55,7 +55,39 @@ function HeroSection() {
     </section>
   );
 }
-
+function MisionVisionCard({ label, text }) {
+  return (
+    <div className="bg-white border border-gray-200 border-t-4 border-t-[#c1272d] p-6 rounded-sm shadow-sm">
+      <h3 className="font-headline font-extrabold text-lg uppercase text-[#c1272d] mb-3">{label}</h3>
+      <p className="text-zinc-500 text-sm leading-relaxed">{text}</p>
+    </div>
+  );
+}
+// ─── Sección Info ─────────────────────────────────────────────────────────────
+function InfoSection() {
+  return (
+    <section className="relative z-10 px-4 sm:px-8 py-12 md:py-24 bg-white/60 backdrop-blur-sm border-t border-gray-200">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="font-headline font-extrabold text-2xl md:text-4xl tracking-tighter text-[#1a1c1e] mb-4 md:mb-6">
+          Funciones Institucionales
+        </h2>
+        <p className="font-body text-[#44474e] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
+          La B-80 Chancay opera bajo los estándares del CGBVP, adaptando su estructura para una respuesta rápida ante emergencias en la zona portuaria y urbana.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <MisionVisionCard
+            label="Misión"
+            text="Salvaguardar la vida y propiedad de los ciudadanos de Chancay mediante la prevención, combate de incendios y atención de emergencias médicas."
+          />
+          <MisionVisionCard
+            label="Visión"
+            text="Ser una unidad de vanguardia tecnológica y operativa, referente en la costa central del país y pilar del desarrollo de Chancay."
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
 function HistoriaSection() {
   return (
     <section className="bg-white text-zinc-900 py-16 md:py-32 px-4 md:px-8">
@@ -102,6 +134,7 @@ export default function Nosotros() {
   return (
     <div>
       <HeroSection />
+      <InfoSection />
       <HistoriaSection />
       <CTASection />
     </div>

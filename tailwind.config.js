@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        headline: ["Oswald", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+      },
       colors: {
         "primary": "#ffb3ae",
         "primary-container": "#c1272d",

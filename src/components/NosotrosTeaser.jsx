@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { RiVerifiedBadgeLine } from "react-icons/ri";
+import { LiaEyeSolid } from "react-icons/lia";
+
 
 export default function NosotrosTeaser() {
   return (
@@ -42,7 +45,7 @@ export default function NosotrosTeaser() {
             <div className="space-y-4">
               {/* Misión */}
               <div className="flex items-start gap-4">
-                <span className="material-symbols-outlined text-[#ffb3ae]">verified</span>
+                <RiVerifiedBadgeLine className="text-[#ffb3ae] text-2xl"/>
                 <div>
                   <h4 className="text-white font-headline font-bold uppercase text-sm">Misión</h4>
                   <p className="text-zinc-500 text-sm">
@@ -53,7 +56,7 @@ export default function NosotrosTeaser() {
 
               {/* Visión */}
               <div className="flex items-start gap-4">
-                <span className="material-symbols-outlined text-[#ffb3ae]">visibility</span>
+                <LiaEyeSolid className="text-[#ffb3ae] text-4xl"/>
                 <div>
                   <h4 className="text-white font-headline font-bold uppercase text-sm">Visión</h4>
                   <p className="text-zinc-500 text-sm">

@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { IoIosWater } from "react-icons/io";
+import { MdMedicalServices, MdMonitorHeart, MdConstruction, MdHeight, MdLocalFireDepartment } from "react-icons/md";
 
 
 const vehicles = [
@@ -8,7 +10,7 @@ const vehicles = [
     name: "Maquina 80-1",
     description: "Autobomba moderna y multipropósito, diseñada para una respuesta rápida y eficiente en emergencias, equipada con tecnología y seguridad de alto nivel.",
     image: "m80-1.png",
-    icons: ["water_drop", "fire_hydrant"],
+    icons: [IoIosWater, MdLocalFireDepartment],
   },
   {
     id: 2,
@@ -16,7 +18,7 @@ const vehicles = [
     name: "Ambulancia-80",
     description: "Ambulancia de tipo II. Cuenta con un equipo especializado para traslados medicos.",
     image: "amb-80.png",
-    icons: ["medical_services", "monitor_heart"],
+    icons: [MdMedicalServices, MdMonitorHeart],
   },
   {
     id: 3,
@@ -24,7 +26,7 @@ const vehicles = [
     name: "AUXILIAR-80",
     description: "Vehículo ligero de apoyo, diseñado para acceso rápido y transporte de personal y equipos en zonas de difícil alcance.",
     image: "auxiliar.jpeg",
-    icons: ["construction", "height"],
+    icons: [MdConstruction, MdHeight],
   },
 ];
 
@@ -99,8 +101,8 @@ function VehicleGrid() {
               </p>
               <div className="mt-auto pt-6 border-t border-white/10 flex justify-between items-center">
                 <div className="flex gap-3">
-                  {v.icons.map((icon, i) => (
-                    <span key={i} className="material-symbols-outlined text-[#ffb3ae]">{icon}</span>
+                  {v.icons.map((IconComponent, i) => (
+                    <IconComponent key={i} className="text-2xl text-[#ffb3ae]" />
                   ))}
                 </div>
 

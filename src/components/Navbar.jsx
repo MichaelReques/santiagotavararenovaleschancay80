@@ -28,12 +28,12 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-[#131314]/80 backdrop-blur-xl shadow-2xl shadow-black/20 border-b border-white/5">
-      <div className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+    <header className="fixed top-0 z-50 w-full bg-[#131314]/80 backdrop-blur-xl shadow-2xl shadow-black/20 border-b border-white/5 ">
+      <div className="flex justify-between items-center w-full px-8 py-2 max-w-screen-2xl mx-auto">
 
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Logo CGBVP" className="h-14 w-auto" />
+          <img src="/logo.png" alt="Logo CGBVP" className="h-20 w-auto" />
         </NavLink>
 
         {/* Nav Links — desktop */}
