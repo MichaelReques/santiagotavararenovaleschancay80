@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
           <p className="text-white text-xs font-body text-center md:text-right leading-relaxed">
             © 2026 CGBVP — Compañía de Bomberos Chancay N° 80<br />
-            Hecho por el Ärea de Instruccion 2026 <br />
+            Hecho por el Área de Instruccion 2026 <br />
             Todos los derechos reservados.
           </p>
         </div>
