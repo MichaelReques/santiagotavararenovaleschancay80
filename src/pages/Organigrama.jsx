@@ -50,19 +50,39 @@ const departamentos = [
 const OrgChart = () => (
   <section className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-8 py-12 md:py-24">
     <div className="relative">
+      {/* COMANDANTE GENERAL*/}
+      <div data-aos="fade-right" className="flex flex-col items-center mb-8">
+        <CardOrga 
+          imagen="comandanteGeneral.jpg"
+          cargo="COMANDANTE GENERAL DEL CGBVP"
+          nombre="BRIG.GENERAL CBP. JUAN CARLOS MORALES CARPIO"
+        />
+        
+      </div>
+
+      {/* COMANDANTE DEPARTAMENTAL XXV*/}
+      <div data-aos="fade-right" className="flex flex-col items-center mb-8">
+        <CardOrga 
+          imagen="josejaime.png"
+          cargo="C.D. LIMA NORTE XXV"
+          nombre="BRIG.MAYOR CBP. JOSE JAIME CARRAZCO PEREZ"
+        />
+        
+      </div>
 
       {/* ── Nivel 1 – Primer Jefe ── */}
-      <div data-aos="fade-right" className="flex flex-col items-center mb-8">
+      <div data-aos="fade-right" className="flex flex-col items-center ">
         <CardOrga 
           imagen="rafa.png"
           cargo="PRIMER JEFE"
           nombre="TNTE. BRIG. CBP. RAFAEL JOANNES DULANTO VEGA"
+          className="bg-red-800"
         />
         <div style={customStyles.orgLineV} className="h-12" />
       </div>
 
       {/* ── Nivel 2 – Segundo Jefe ── bg-[#2a4386] */}
-      <div data-aos="fade-right" className="flex flex-col items-center mb-8">
+      <div data-aos="fade-right" className="flex flex-col items-center">
         <CardOrga 
           imagen="magaly.png"
           cargo="SEGUNDO JEFE"
@@ -73,8 +93,8 @@ const OrgChart = () => (
       </div>
 
       {/* ── Nivel 3 – Jefes de Sección ── */}
-      <div data-aos="fade-right" className="flex flex-col items-center mb-8 md:mb-16 relative">
-        <div className="bg-white/95 backdrop-blur-md px-6 py-4 md:p-6 min-w-[200px] md:min-w-[280px] text-center border-t-4 border-[#6b6b00] rounded-sm shadow-sm">
+      <div data-aos="fade-right" className="flex flex-col items-center   relative">
+        <div className="bg-white/95 backdrop-blur-md px-6 py-4 md:p-6 min-w-50 md:min-w-70 text-center border-t-4 border-[#6b6b00] rounded-sm shadow-sm">
           <h4 className="font-headline font-extrabold text-base md:text-lg text-[#1a1c1e] uppercase tracking-tight">
             Jefes de sección
           </h4>

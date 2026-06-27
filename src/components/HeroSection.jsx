@@ -5,7 +5,7 @@ import { RiVerifiedBadgeLine } from "react-icons/ri";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[972px] flex items-center justify-start overflow-hidden" data-aos="fade-up">
+    <section className="relative h-243 flex items-center justify-start overflow-hidden" data-aos="fade-up">
 
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0 pt-20">
@@ -14,7 +14,7 @@ export default function HeroSection() {
           alt="Bomberos en acción"
           className="w-full h-full object-cover object-[center_0%] grayscale-[0.2] brightness-[0.4]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#131314] via-[#131314]/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-[#131314] via-[#131314]/40 to-transparent"></div>
       </div>
 
       {/* Contenido */}
@@ -23,7 +23,7 @@ export default function HeroSection() {
 
           {/* Subtítulo */}
           <div className="flex items-center gap-4">
-            <div className="w-12 h-[2px] bg-[#c1272d]"></div>
+            <div className="w-12 h-0.5 bg-[#c1272d]"></div>
             <span className="font-headline font-bold uppercase tracking-[0.2em] text-[#ffb3ae] text-sm">
               Dios · Patria · Humanidad
             </span>
