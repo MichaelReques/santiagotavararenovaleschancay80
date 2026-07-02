@@ -50,7 +50,7 @@ export default function Footer() {
             href="tel:017221738"
             className="text-[#c1272d] font-headline font-extrabold text-4xl tracking-tighter hover:text-[#ff4444] transition-colors text-center"
           >
-            LLAMANOS AL <br /> 116
+            LLÁMANOS AL <br /> 116
           </a>
         </div>
 

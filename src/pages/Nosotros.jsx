@@ -14,7 +14,7 @@ const historia = [
 function HistoriaEvent({ year, title, desc, img, reverse }) {
   const imgBlock = (
     <div className="hidden md:block overflow-hidden rounded-sm h-64 shadow-2xl">
-      <img src={img} className="w-full h-full object-cover" alt={title} />
+      <img src={img} className="w-full h-full object-contain" alt={title} />
     </div>
   );
   const textBlock = (
@@ -26,7 +26,7 @@ function HistoriaEvent({ year, title, desc, img, reverse }) {
   );
   return (
     <div className="relative pl-8 md:pl-0 md:grid md:grid-cols-2 md:gap-20 items-center">
-      <div className="absolute left-0 md:left-[-9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-[#c1272d]" />
+      <div className="absolute left-0 md:left-2.25 top-0 w-4 h-4 rounded-full bg-white border-4 border-[#c1272d]" />
       {reverse ? <>{imgBlock}{textBlock}</> : <>{textBlock}{imgBlock}</>}
     </div>
   );

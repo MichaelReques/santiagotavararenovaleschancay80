@@ -63,7 +63,7 @@ const OrgChart = () => (
       {/* COMANDANTE DEPARTAMENTAL XXV*/}
       <div data-aos="fade-right" className="flex flex-col items-center mb-8">
         <CardOrga 
-          imagen="josejaime.png"
+          imagen="carrazco.jpg"
           cargo="C.D. LIMA NORTE XXV"
           nombre="BRIG.MAYOR CBP. JOSE JAIME CARRAZCO PEREZ"
         />
