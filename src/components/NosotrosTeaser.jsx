@@ -15,7 +15,7 @@ export default function NosotrosTeaser() {
               <img
                 src="/img2.png"
                 alt="Estación de bomberos histórica"
-                className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
+                className="w-full h-full object-contain scale-105 group-hover:scale-100 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-[#c1272d]/10 mix-blend-overlay"></div>
             </div>
@@ -37,15 +37,15 @@ export default function NosotrosTeaser() {
             </h2>
 
             <p className="text-zinc-400 leading-relaxed font-body text-lg">
-              Somos voluntarios de Chancay, unidos por el compromiso de servir y proteger a 
-              nuestra comunidad. Desde 1991, trabajamos con entrega y valentía para responder 
+              Somos voluntarios de Chancay, unidos por el compromiso de servir y proteger a
+              nuestra comunidad. Desde 1991, trabajamos con entrega y valentía para responder
               ante emergencias y cuidar a quienes más lo necesitan.
             </p>
 
             <div className="space-y-4">
               {/* Misión */}
               <div className="flex items-start gap-4">
-                <RiVerifiedBadgeLine className="text-[#ffb3ae] text-2xl"/>
+                <RiVerifiedBadgeLine className="text-[#ffb3ae] text-2xl" />
                 <div>
                   <h4 className="text-white font-headline font-bold uppercase text-sm">Misión</h4>
                   <p className="text-zinc-500 text-sm">
@@ -56,7 +56,7 @@ export default function NosotrosTeaser() {
 
               {/* Visión */}
               <div className="flex items-start gap-4">
-                <LiaEyeSolid className="text-[#ffb3ae] text-4xl"/>
+                <LiaEyeSolid className="text-[#ffb3ae] text-4xl" />
                 <div>
                   <h4 className="text-white font-headline font-bold uppercase text-sm">Visión</h4>
                   <p className="text-zinc-500 text-sm">

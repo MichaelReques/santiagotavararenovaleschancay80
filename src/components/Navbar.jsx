@@ -49,7 +49,7 @@ export default function Navbar() {
             to="/postula"
             className="bg-[#c1272d] text-white px-6 py-2 rounded-sm font-headline font-bold text-sm tracking-tight scale-95 active:scale-90 hover:brightness-110 transition-all"
           >
-            Postula Aquí
+            Postula aquí
           </NavLink>
 
           <button

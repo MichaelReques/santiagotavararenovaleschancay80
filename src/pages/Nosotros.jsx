@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const historia = [
   { year: "1990",        title: "El inicio del sueño",      desc: "Se conforma la Comisión Pro Bomberos de Chancay, liderada por James de la Puente junto a vecinos comprometidos. La comunidad transforma una necesidad en acción.", img: "n1.png", reverse: false },
-  { year: "1991",        title: "Fundación de la Compañía", desc: 'El 4 de mayo se oficializa la creación de la Compañía de Bomberos "Santiago Tavares Renovales N°80". Se nombra como Primer Jefe a Manuel Muñoz Nájar Nuñez y Segundo Jefe a Fernando Parodi Tong.', img: "n2.png", reverse: true },
+  { year: "1991",        title: "Fundación de la Compañía", desc: 'El 5 de mayo se oficializa la creación de la Compañía de Bomberos "Santiago Tavares Renovales N°80". Se nombra como Primer Jefe a Manuel Muñoz Nájar Nuñez y Segundo Jefe a Fernando Parodi Tong.', img: "n2.png", reverse: true },
   { year: "1991 - 1992", title: "Primeros pasos",           desc: "Años marcados por el esfuerzo y la solidaridad. Se cede un terreno para iniciar las operaciones y brindar servicio a la comunidad.", img: "n3.png", reverse: false },
   { year: "1992 - 1993", title: "Establecimiento",          desc: "La compañía se traslada frente al Palacio Municipal de Chancay. En 1993 se establece en su actual ubicación: Miguel Grau 272, incorporando línea telefónica y radio base.", img: "n4.png", reverse: true },
   { year: "1994",        title: "Crecimiento y apoyo",      desc: "Se obtiene la primera ambulancia gracias a gestión pública. Además, se apoya en la reactivación de la Compañía de Bomberos de Huaral. Se recibe una nueva unidad: Nissan Safari.", img: "n5.png", reverse: false },
@@ -37,7 +37,7 @@ function HeroSection() {
     <section className="relative h-[80vh] flex items-center overflow-hidden pt-16" data-aos="fade-down">
       <div className="absolute inset-0 z-0">
         <img src="mack-autobomba.jpg" alt="Bomberos Heroico" className="w-full h-full md:object-cover md:opacity-40 grayscale" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#131314] via-[#131314]/80 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#131314] via-[#131314]/80 to-transparent" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center gap-4 mb-4">
@@ -116,7 +116,7 @@ function CTASection() {
       <div className="max-w-7xl mx-auto bg-zinc-900 text-white p-6 md:p-12 lg:p-20 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12 rounded-sm shadow-2xl">
         <div className="text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-black font-headline tracking-tight mb-4">
-            ¿QUIERES SER PARTE DE LA <span className="text-[#c1272d]">HISTORIA</span>?
+            ¿QUIERES SER PARTE DE LA <span className="text-[#c1272d]">HISTORIA?</span>
           </h2>
           <p className="text-zinc-400 max-w-xl">Buscamos hombres y mujeres comprometidos con el servicio desinteresado. El proceso de admisión está abierto para ciudadanos con vocación de servicio.</p>
         </div>

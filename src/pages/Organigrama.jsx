@@ -64,7 +64,7 @@ const OrgChart = () => (
       <div data-aos="fade-right" className="flex flex-col items-center mb-8">
         <CardOrga 
           imagen="carrazco.jpg"
-          cargo="C.D. LIMA NORTE XXV"
+          cargo="COMANDANTE.D. LIMA NORTE XXV"
           nombre="BRIG.MAYOR CBP. JOSE JAIME CARRAZCO PEREZ"
         />
         
@@ -76,7 +76,7 @@ const OrgChart = () => (
           imagen="rafa.png"
           cargo="PRIMER JEFE"
           nombre="TNTE. BRIG. CBP. RAFAEL JOANNES DULANTO VEGA"
-          className="bg-red-800"
+          
         />
         <div style={customStyles.orgLineV} className="h-12" />
       </div>
@@ -86,8 +86,8 @@ const OrgChart = () => (
         <CardOrga 
           imagen="magaly.png"
           cargo="SEGUNDO JEFE"
-          nombre="CAP. CBP. VICTORIA MAGALI VILLABOS REYES"
-          className="bg-[#2a4386]"
+          nombre="CAP. CBP. VICTORIA MAGALI VILLALOBOS REYES"
+          //className="bg-[#2a4386]"
         />
         <div style={customStyles.orgLineV} className="h-12" />
       </div>
